@@ -1,0 +1,84 @@
+.creative-design-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.yellow-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Ensure the background is behind the image and text */
+}
+
+.main-image {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1; /* Ensure the image is above the background */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  color: #fff;
+  background-color: #f1c40f;
+  padding: 10px 20px;
+  border-radius: 10px;
+  z-index: 2; /* Ensure the text is above the image */
+}
+
+.right-section {
+  flex: 2;
+  padding: 20px;
+}
+
+.content {
+  text-align: left;
+}
+
+.content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.content h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  margin-right: 15px;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+}

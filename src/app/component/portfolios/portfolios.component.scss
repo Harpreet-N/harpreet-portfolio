@@ -1,0 +1,47 @@
+.portfolios-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+.portfolios-section h2 {
+  font-size: 2.5em;
+  color: #000;
+}
+.portfolios-section p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  max-width: 300px;
+  text-align: left;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+}
+.btn-primary {
+  background-color: #ff0;
+  border-color: #ff0;
+}
