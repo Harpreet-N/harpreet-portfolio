@@ -1,67 +1,71 @@
-.portfolios-section {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-//TODO schauen
 .portfolio-element {
-  background-image: url('/assets/img/element_circle.svg');
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: 91%;
+  padding: 20px;
 }
 
-.portfolios-section h2 {
-  font-size: 2.5em;
-  color: #000;
-}
-.portfolios-section p {
-  font-size: 1.2em;
+.portfolios-section,
+.projects-section {
   margin-bottom: 40px;
 }
+
+.portfolios-section h2,
+.projects-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
 }
+
 .card {
   background: #fff;
-  border: 0.5px solid #000;
-  border-radius: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   padding: 20px;
-  margin: 10px;
-  max-width: 300px;
-  text-align: left;
-  transition: transform 0.3s;
+  width: calc(25% - 20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .card:hover {
   transform: translateY(-10px);
-  background: #fff070;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-.icon {
-  font-size: 2em;
+
+.card h3 {
+  font-size: 1.5em;
   margin-bottom: 10px;
 }
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 20px;
-  border: 2px solid #000;
-  border-radius: 5px;
-  text-decoration: none;
+
+.card p {
+  font-size: 1em;
   color: #333;
 }
-.btn-primary {
-  background-color: #ffe400;
-  border-color: #333;
-}
-
 
 .projects-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 15px 0;
+  gap: 20px;
+  justify-content: center;
+}
+
+.app-project-card {
+  width: calc(33.333% - 20px); /* Adjust based on your design preference */
+}
+
+@media (max-width: 768px) {
+  .card, .app-project-card {
+    width: calc(50% - 20px);
+    padding: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card, .app-project-card {
+    width: calc(100% - 20px);
+  }
 }

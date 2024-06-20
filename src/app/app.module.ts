@@ -11,6 +11,8 @@ import { ImpressumComponent } from './component/impressum/impressum.component';
 import { DatenschutzerklarungComponent } from './component/datenschutzerklarung/datenschutzerklarung.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { ProjectShowcaseComponent } from './component/project-showcase/project-showcase.component';
+import { ContactFormComponent } from './component/contact-form/contact-form.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -23,11 +25,13 @@ import { ProjectShowcaseComponent } from './component/project-showcase/project-s
     DatenschutzerklarungComponent,
     FooterComponent,
     ProjectShowcaseComponent,
+    ContactFormComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
