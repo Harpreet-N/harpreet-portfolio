@@ -1,0 +1,10 @@
+<div class="card" (click)="redirectToProject()">
+  <div class="card-image" [ngStyle]="{'background-image': 'url(' + project.images[0] + ')'}">
+    <div class="card-hover">
+      <p>{{ project.description }}</p>
+    </div>
+  </div>
+  <div class="card-heading">
+    <h3>{{ project.title }}</h3>
+  </div>
+</div>

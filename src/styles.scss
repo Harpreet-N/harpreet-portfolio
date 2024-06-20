@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+}
+.container {
+  //max-width: 1600px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.header a {
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+}
+.main-content {
+  text-align: center;
+  padding: 40px 0;
+}
+.main-content h1 {
+  font-size: 2em;
+}
+.main-content p {
+  font-size: 1.2em;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+}
+.btn-primary {
+  background-color: #ff0;
+  border-color: #ff0;
+}
+.profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+}

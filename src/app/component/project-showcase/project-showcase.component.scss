@@ -1,0 +1,81 @@
+.project-showcase-container {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 4%;
+}
+
+.project-details {
+  margin-bottom: 28px;
+  text-align: left; /* Center align for cooler layout */
+}
+
+.project-details h2 {
+  margin-bottom: 16px;
+  font-size: 2.5em; /* Larger font size for title */
+  color: #333;
+}
+
+.project-meta {
+  font-size: 1.2em; /* Larger font size for meta information */
+  margin: 16px 0;
+}
+
+.project-description {
+  font-size: 1.5em; /* Larger font size for description */
+  color: #333333;
+  margin: 24px 0;
+}
+
+.project-link {
+  font-size: 1.2em;
+  color: #333333;
+}
+
+.project-link a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px dashed #007bff; /* Dashed underline for link */
+}
+
+.project-link a:hover {
+  border-bottom: 1px solid #007bff;
+}
+
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center; /* Center images */
+}
+
+.project-image {
+  flex: 1 1 calc(33.333% - 20px); /* Adjust this to change the number of images per row */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: calc(33.333% - 20px); /* Ensure images don't exceed container */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .project-image {
+    flex: 1 1 calc(50% - 20px); /* Adjust for smaller screens */
+    max-width: calc(50% - 20px); /* Ensure images don't exceed container */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-image {
+    flex: 1 1 calc(100% - 20px); /* One image per row on very small screens */
+    max-width: calc(100% - 20px); /* Ensure images don't exceed container */
+  }
+}

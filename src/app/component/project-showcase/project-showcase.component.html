@@ -1,0 +1,14 @@
+<div class="project-showcase-container">
+  <div class="project-details">
+    <h2>{{ project.title }}</h2>
+    <p class="project-meta"><strong>Industry:</strong> {{ project.industry }}</p>
+    <p class="project-meta"><strong>Year:</strong> {{ project.year }}</p>
+    <p class="project-description">{{ project.description }}</p>
+    <p *ngIf="project.url" class="project-link"><strong><a [href]="project.url" target="_blank">Watch Full Project  </a></strong> </p>
+  </div>
+  <div class="project-images">
+    <div *ngFor="let image of project.images" class="project-image">
+      <img [src]="image" alt="{{ project.title }}">
+    </div>
+  </div>
+</div>

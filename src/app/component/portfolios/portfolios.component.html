@@ -1,0 +1,30 @@
+<div class="portfolio-element">
+  <div class="portfolios-section">
+    <h2>Portfolios</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>UI/UX Designing 📐</h3>
+        <p>I provide stunning designs for your UI/UX project and can handle any project related to landing page designs, e-commerce designs, portfolio website designs, business websites, and many more as per your requirements.</p>
+      </div>
+      <div class="card">
+        <h3>Graphic Designing 🎨</h3>
+        <p>I provide amazing and professional graphic assets for your projects such as social media post designs, logo designs, business card designs, poster designs, YouTube and blog thumbnail designs, product label designs, and many more categories as per your requirements.</p>
+      </div>
+      <div class="card">
+        <h3>Web Development 💻</h3>
+        <p>After designing the web apps or sites, I also offer web development services for any kind of website such as business landing pages, product-related website development, and I can handle all the projects.</p>
+      </div>
+      <div class="card">
+        <h3>Mobile App UI/UX 📱</h3>
+        <p>Along with web design and development, I offer mobile app UI/UX design services. If you are looking for someone who can create the layout and pages of your mobile app professionally, I am here to handle this kind of project.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="projects-section">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <app-project-card *ngFor="let pro of projects" [project]="pro"></app-project-card>
+    </div>
+  </div>
+</div>
