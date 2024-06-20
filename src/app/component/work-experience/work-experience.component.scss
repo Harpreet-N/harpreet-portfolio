@@ -1,6 +1,6 @@
 .work-experience-container {
   padding: 40px;
-  background-color: #f4f4f4;
+  //background-color: #f4f4f4;
   text-align: center;
   overflow: hidden;
 }
@@ -10,7 +10,7 @@
   margin-bottom: 40px;
   opacity: 0;
   transform: translateY(-20px);
-  animation: fadeInDown 1s forwards;
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
 }
 
 .timeline {
@@ -19,7 +19,7 @@
   align-items: center;
   opacity: 0;
   transform: translateY(20px);
-  animation: fadeInUp 1s forwards 0.5s;
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
 }
 
 .timeline-item {
@@ -28,19 +28,7 @@
   margin-bottom: 40px;
   opacity: 0;
   transform: translateY(20px);
-  animation: fadeInUp 1s forwards;
-}
-
-.timeline-item:nth-child(1) {
-  animation-delay: 0.5s;
-}
-
-.timeline-item:nth-child(2) {
-  animation-delay: 0.7s;
-}
-
-.timeline-item:nth-child(3) {
-  animation-delay: 0.9s;
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
 }
 
 .timeline-left,
@@ -60,15 +48,13 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #000;
+  background-color: #ddd;
+  border-color: #333333;
+  border-style: solid;
+  border-width: 0.5px;
   position: relative;
   z-index: 2;
   transition: transform 0.3s, background-color 0.3s;
-}
-
-.circle:hover {
-  transform: scale(1.2);
-  background-color: #3498db;
 }
 
 .line {
@@ -78,18 +64,6 @@
   position: absolute;
   top: 20px;
   z-index: 1;
-}
-
-.teal {
-  background-color: #1abc9c;
-}
-
-.orange {
-  background-color: #e67e22;
-}
-
-.yellow {
-  background-color: #f1c40f;
 }
 
 .timeline-left h3,
@@ -104,16 +78,14 @@
   color: #555;
 }
 
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.show {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
-@keyframes fadeInDown {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.highlight-circle {
+  background-color: #ffe400 !important;
+  transform: scale(1.2) !important;
 }
+
+

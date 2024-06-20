@@ -2,6 +2,15 @@
   text-align: center;
   padding: 40px 20px;
 }
+
+//TODO schauen
+.portfolio-element {
+  background-image: url('/assets/img/element_circle.svg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 91%;
+}
+
 .portfolios-section h2 {
   font-size: 2.5em;
   color: #000;
@@ -17,7 +26,7 @@
 }
 .card {
   background: #fff;
-  border: 2px solid #000;
+  border: 0.5px solid #000;
   border-radius: 10px;
   padding: 20px;
   margin: 10px;
@@ -27,6 +36,9 @@
 }
 .card:hover {
   transform: translateY(-10px);
+  background: #fff070;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
 }
 .icon {
   font-size: 2em;
@@ -39,9 +51,17 @@
   border: 2px solid #000;
   border-radius: 5px;
   text-decoration: none;
-  color: black;
+  color: #333;
 }
 .btn-primary {
-  background-color: #ff0;
-  border-color: #ff0;
+  background-color: #ffe400;
+  border-color: #333;
+}
+
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 15px 0;
 }

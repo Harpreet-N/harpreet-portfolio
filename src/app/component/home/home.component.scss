@@ -1,54 +1,107 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-.header {
+.home-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  justify-content: space-between;
+  padding: 40px;
+ // background-color: #f4f4f4;
 }
-.header a {
-  text-decoration: none;
-  color: black;
-  margin-right: 20px;
+
+.container {
+  max-width: 1600px;
 }
-.main-content {
-  text-align: center;
-  padding: 40px 0;
+
+.img-element {
+  background-image: url('/assets/img/profil_pic.svg');
+  background-repeat: space;
 }
-.main-content h1 {
-  font-size: 2em;
+
+.content {
+  max-width: 60%;
 }
-.main-content p {
+
+.content h1 {
+  font-size: 2.5em;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.content .highlight {
+  background-color: yellow;
+}
+
+.content .subtitle {
   font-size: 1.2em;
+  margin-bottom: 20px;
 }
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
 .btn {
-  display: inline-block;
   padding: 10px 20px;
-  margin: 10px;
-  border: 2px solid #000;
   border-radius: 5px;
   text-decoration: none;
-  color: black;
+  color: #000;
+  transition: background-color 0.3s, color 0.3s;
 }
-.btn-primary {
-  background-color: #ff0;
-  border-color: #ff0;
+
+.discuss-btn {
+  border: 2px solid #000;
+  background-color: transparent;
 }
+
+.discuss-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.talk-btn {
+  background-color: yellow;
+  border: 2px solid yellow;
+}
+
+.talk-btn:hover {
+  background-color: #d4ac0d;
+  border-color: #d4ac0d;
+}
+
+.profile-pic-container {
+  position: relative;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
 .profile-pic {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  margin-top: 20px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
-.highlight {
-  background-color: #ff0;
-  color: black;
+
+.profile-pic-container::before {
+  content: '';
+  position: absolute;
+  width: 320px;
+  height: 320px;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content, .profile-pic-container {
+    width: 100%;
+  }
+
+  .profile-pic-container {
+    margin-top: 20px;
+  }
 }

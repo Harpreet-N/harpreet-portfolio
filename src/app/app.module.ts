@@ -5,16 +5,24 @@ import { AppComponent } from './app.component';
 import {HomeComponent} from "./component/home/home.component";
 import {AppRoutingModule} from "./app-routing.module";
 import {PortfoliosComponent} from "./component/portfolios/portfolios.component";
-import {CreativeDesignComponent} from "./component/creative-design/creative-design.component";
 import { WorkExperienceComponent } from './component/work-experience/work-experience.component';
+import { ProjectCardComponent } from './component/project-card/project-card.component';
+import { ImpressumComponent } from './component/impressum/impressum.component';
+import { DatenschutzerklarungComponent } from './component/datenschutzerklarung/datenschutzerklarung.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { ProjectShowcaseComponent } from './component/project-showcase/project-showcase.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PortfoliosComponent,
-    CreativeDesignComponent,
     WorkExperienceComponent,
+    ProjectCardComponent,
+    ImpressumComponent,
+    DatenschutzerklarungComponent,
+    FooterComponent,
+    ProjectShowcaseComponent,
   ],
   imports: [
     BrowserModule,

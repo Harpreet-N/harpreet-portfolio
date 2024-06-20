@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-work-experience',
@@ -18,6 +18,16 @@ export class WorkExperienceComponent implements OnInit {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('show');
+          const circle = entry.target.querySelector('.circle');
+          if (circle) {
+            circle.classList.add('highlight-circle');
+          }
+        } else {
+          entry.target.classList.remove('show');
+          const circle = entry.target.querySelector('.circle');
+          if (circle) {
+            circle.classList.remove('highlight-circle');
+          }
         }
       });
     });
